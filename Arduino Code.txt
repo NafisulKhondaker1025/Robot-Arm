@@ -1,0 +1,66 @@
+switch(value){     
+         case 12495: //"1"
+         while (results.value == -1) {
+              servo1.write(0);
+            break;
+         }
+         case 4335:  //"4"
+         while (results.value == -1) {
+              servo1.write(90);            
+            break;
+         }
+         case 6375:  //"2"
+         while (results.value == -1) { 
+            servoPositions[1]++;
+            if (servoPositions[1] > 180) {
+              servoPositions[1] = 180;
+            }
+            servo2.write(servoPositions[1]);            
+            break;
+         }
+         case 14535:  //"5"
+         while (results.value == -1) {
+            servoPositions[1]--;
+            if (servoPositions[1] < 0) {
+              servoPositions[1] = 0;
+            }
+            servo2.write(servoPositions[1]);
+            break;
+         }
+         case 31365:  //"3"
+         while (results.value == -1) {
+            servoPositions[2]++;
+            if (servoPositions[2] > 180) {
+              servoPositions[2] = 180;
+            }
+            servo3.write(servoPositions[2]);
+            break;
+         }
+         case 23205:  //"6"
+         while (results.value == -1) {
+            servoPositions[2]--;
+            if (servoPositions[2] < 0) {
+              servoPositions[2] = 0;
+            }
+            servo3.write(servoPositions[2]);
+            break;
+         }
+         case 17085:  //"7"
+         while (results.value == -1) {
+            servoPositions[3]++;
+            if (servoPositions[3] > 180) {
+              servoPositions[3] = 180;
+            }
+            servo4.write(servoPositions[3]);
+            break;
+         }
+         case 19125:  //"8"
+         while (results.value == -1) {
+            servoPositions[3]--;
+            if (servoPositions[3] < 0) {
+              servoPositions[3] = 0;
+            }
+            servo4.write(servoPositions[3]);
+            break;
+         }
+       }
